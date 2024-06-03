@@ -1,1 +1,1 @@
-# tiendapro
+README Stiven: Cuando vayas a realizar las otras paginas usa acceSam, AudSam, CeluSam, SwSam, TabSam y Samsung, lo demas no lo toques, usalas de plantilla

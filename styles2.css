@@ -145,6 +145,11 @@ header{
     gap: 20px;
 }
 
+.container-items:SwSam.html{
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    gap: 20px
+}
 .item{
     border-radius: 10px;
 }
