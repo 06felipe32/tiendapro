@@ -1,93 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundas</title>
-    <link rel="stylesheet" href="estilo.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    />
+    <title>Samsung</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <header>
-        <h1>samsung</h1>
-        <div class="container-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-cart">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
-              </svg>    
-        <div class="count-product">
-            <span id="contador-productos">0</span>
-        </div>
+        <h1>Samsung</h1>
 
-        <div class="container-cart-productos hidden-cart">
-            <div class="cart-product">
-                <div class="info-cart-product">
-                    <span class="cantidad-producto-carrito">1</span>
-                    <p class="titulo-producto-carrito">celulares</p>
-                        <span class="precio-producto-carrito">$800000</span>
+        <div class="container-icon">
+            <div class="container-cart-icon">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="icon-cart"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                    />
+                </svg>
+                <div class="count-products">
+                    <span id="contador-productos">0</span>
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-close">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                  </svg>
             </div>
-            <div class="cart-total"></div>
-            <h3>Total:</h3>
-            <span class="total-pagar">30000000</span>
+
+            <div class="container-cart-products hidden-cart">
+                <div class="row-product hidden">
+                    <div class="cart-product">
+                        <div class="info-cart-product">
+                            <span class="cantidad-producto-carrito">1</span>
+                            <p class="titulo-producto-carrito">Zapatos Nike</p>
+                            <span class="precio-producto-carrito">$80</span>
+                        </div>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="icon-close"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M6 18L18 6M6 6l12 12"
+                            />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="cart-total hidden">
+                    <h3>Total:</h3>
+                    <span class="total-pagar">$200</span>
+                </div>
+                <p class="cart-empty">El carrito está vacío</p>
+            </div>
         </div>
     </header>
-        <div class="container-items">
-            
-            
-            
-            <!-- celulares -->
-            <div class="item">
-                <figure>
-                    <img src="https://images.samsung.com/is/image/samsung/p6pim/latin/sm-a546elgagto/gallery/latin-galaxy-a54-5g-sm-a546-sm-a546elgagto-thumb-535931985?$264_264_PNG$" alt="Celulares samsung">
-                </figure>
-                <div class="info-pruduct">
-                    <h2>Celulares</h2>
-                    <button>Ver información</button>
-                </div>
-            </div>
-            <!-- tabletas -->
-            <div class="item">
-                <figure>
-                    <img src="https://www.elgallomasgallo.com.gt/media/catalog/product/t/a/tablet-samsung-galaxy-tab-a9-wi-fi-gris-189234_4_.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700" alt="tabletas samsung">
-                </figure>
-                <div class="info-pruduct">
-                    <h2>Tabletas</h2>
-                    <button>Ver información</button>
-                </div>
-            </div>
-            <!-- smart watch -->
-            <div class="item">
-                <figure>
-                    <img src="https://m.media-amazon.com/images/I/61s1Na3W61L._AC_UF894,1000_QL80_.jpg" alt="smart watch samsung">
-                </figure>
-                <div class="info-pruduct">
-                    <h2>Smart watch</h2>
-                    <button>Ver información</button>
-                </div>
-            </div>
-            <!-- audifonos -->
-            <div class="item">
-                <figure>
-                    <img src="https://falabella.scene7.com/is/image/FalabellaCO/11914647_1?wid=800&hei=800&qlt=70" alt="audifonos">
-                </figure>
-                <div class="info-pruduct">
-                    <h2>Audifonos</h2>
-                    <button>Ver información</button>
-                </div>
-            </div>
-            <!-- accesorios -->
-            <div class="item">
-                <figure>
-                    <img src="https://redsolucionesmoviles.com/wp-content/uploads/2024/01/Funda-Silicon-Celular-Samsung-Galaxy-A24-1.jpg" alt="accesorios samsung">
-                </figure>
-                <div class="info-pruduct">
-                    <h2>Accesorios</h2>
-                    <button>Ver información</button>
-                </div>
+
+    <div class="container-items">
+        <div class="item">
+            <!-- Celulares -->
+            <figure>
+                <img
+                    src="https://images.samsung.com/is/image/samsung/p6pim/latin/sm-a546elgagto/gallery/latin-galaxy-a54-5g-sm-a546-sm-a546elgagto-thumb-535931985?$264_264_PNG$"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Celulares</h2>
+                <a href="CeluSam.html" class="no-underline">Ver Informacion</a>
             </div>
         </div>
-        <script src="carrito.js"></script>
+
+        <!-- Tabletas -->
+        <div class="item">
+            <figure>
+                <img
+                    src="https://www.elgallomasgallo.com.gt/media/catalog/product/t/a/tablet-samsung-galaxy-tab-a9-wi-fi-gris-189234_4_.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Tabletas</h2>
+                <a href="TabSam.html" class="no-underline">Ver Informacion</a>
+            </div>
+        </div>
+
+        <!-- SmartWatch -->
+        <div class="item">
+            <figure>
+                <img
+                    src="https://m.media-amazon.com/images/I/61s1Na3W61L._AC_UF894,1000_QL80_.jpg"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>SmartWatch</h2>
+                <a href="SwSam.html" class="no-underline">Ver Informacion</a>
+            </div>
+        </div>
+
+        <!-- Audifonos -->
+        <div class="item">
+            <figure>
+                <img
+                    src="https://falabella.scene7.com/is/image/FalabellaCO/11914647_1?wid=800&hei=800&qlt=70"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Audifonos</h2>
+                <a href="AudSam.html" class="no-underline">Ver Informacion</a>
+            </div>
+        </div>
+
+        <!-- Accesorios -->
+        <div class="item">
+            <figure>
+                <img
+                    src="https://redsolucionesmoviles.com/wp-content/uploads/2024/01/Funda-Silicon-Celular-Samsung-Galaxy-A24-1.jpg"
+                    alt="producto"
+                />
+            </figure>
+            <div class="info-product">
+                <h2>Accesorios</h2>
+                <a href="AcceSam.html" class="no-underline">Ver Informacion</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
